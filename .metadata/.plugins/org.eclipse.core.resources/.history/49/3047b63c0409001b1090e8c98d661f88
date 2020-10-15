@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+request.setCharacterEncoding("UTF-8");
+%>    
+<jsp:useBean class="com.naved.Member2" id="member" scope="session" />
+<jsp:setProperty name="member" property="*"/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+
+
+<<%--********************************************************************************* %>
+<h2>입력이 완료된 회원 정보</h2>
+이름 : <jsp:getProperty name="member" property="name"/><br>
+닉네임 : <jsp:getProperty name="member" property="nickname"/><br><br>
+아이디 : <jsp:getProperty name="member" property="id"/><br><br>
+비밀번호 : <jsp:getProperty name="member" property="pw"/><br><br>
+이메일 :<jsp:getProperty name="member" property="email"/><br> <br>
+전화번호 : <jsp:getProperty name="member" property="phone"/><br><br>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

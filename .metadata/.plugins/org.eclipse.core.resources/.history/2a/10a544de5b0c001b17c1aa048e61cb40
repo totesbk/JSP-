@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String sql =
+"INSET INTO member VALUYES('정길동','jung','1234','jung@naer.com','010-1234-5678',0)"
+
+	try{
+		//1단계
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		//2단계
+		conn = DriverManager.getConnection(url,uid,upw);
+		
+		//3단계
+		stmt = conn.createStatement();
+		
+		//4단계
+		stmt.executeUpdate(sql);
+	}catch(Exception e){
+		
+	}
+%>
+</body>
+</html>

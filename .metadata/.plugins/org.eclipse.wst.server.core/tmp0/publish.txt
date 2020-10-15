@@ -1,0 +1,12 @@
+#Tomcat publish data
+#Wed Oct 14 16:48:54 KST 2020
+org.eclipse.jst.jee.server\:Example01=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\Example01
+org.eclipse.jst.jee.server\:web09=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web09
+org.eclipse.jst.jee.server\:web08=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web08
+org.eclipse.jst.jee.server\:web10=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web10
+org.eclipse.jst.jee.server\:web07=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web07
+org.eclipse.jst.jee.server\:web06=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web06
+org.eclipse.jst.jee.server\:web05=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web05
+org.eclipse.jst.jee.server\:web04=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web04
+org.eclipse.jst.jee.server\:web03=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web03
+org.eclipse.jst.jee.server\:web02=C\:\\Server\\apache-tomcat-8.5.58\\wtpwebapps\\web02

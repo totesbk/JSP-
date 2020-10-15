@@ -1,0 +1,15 @@
+
+10월 14, 2020 12:57:40.930 NEW SESSION
+10월 14, 2020 12:57:40.930 [3548:8944:1014/125740.929:ERROR:device_event_log_impl.cc(208)] [12:57:40.928] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 13:00:37.312 [8260:1612:1014/130037.312:ERROR:device_event_log_impl.cc(208)] [13:00:37.312] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 13:01:39.27 [8600:8592:1014/130139.027:ERROR:device_event_log_impl.cc(208)] [13:01:39.027] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 13:11:28.714 [1014/131128.714:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+10월 14, 2020 13:18:10.927 [8824:5840:1014/131810.927:ERROR:device_event_log_impl.cc(208)] [13:18:10.927] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 13:18:48.362 [4564:4668:1014/131848.362:ERROR:device_event_log_impl.cc(208)] [13:18:48.362] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 13:28:47.94 [1014/132847.093:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+10월 14, 2020 15:32:58.334 [548:7192:1014/153258.333:ERROR:device_event_log_impl.cc(208)] [15:32:58.334] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 15:42:57.30 [1014/154257.029:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+10월 14, 2020 15:46:04.53 [7768:9144:1014/154604.053:ERROR:device_event_log_impl.cc(208)] [15:46:04.053] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 15:55:58.772 [1014/155558.771:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+10월 14, 2020 16:02:05.320 [7216:8104:1014/160205.319:ERROR:device_event_log_impl.cc(208)] [16:02:05.320] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+10월 14, 2020 16:12:00.29 [1014/161200.028:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)

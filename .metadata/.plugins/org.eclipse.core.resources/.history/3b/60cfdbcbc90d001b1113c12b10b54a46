@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+
+function loginCheck(){
+	if(document.frm.userid.value.length == 0){
+		alert('아이디를 입력 해주세요.');
+		frm.userid.focus();
+		return false;
+	}
+	if(document.frm.userpwd.value.length == ""){
+		alert('비밀번호는 반드시 입력해야 합니다.');
+		frm.userpwd.focus();
+		return false;
+	}
+	return true;
+}
+
+
+function idCheck(){
+		if(document.frm.userid.value.length == 0){
+		alert('아이디를 입력 해주세요.');
+		frm.userid.focus();
+		return;
+	}
+	var url = "idCheck.do?userid="+document.frm.userid.value;
+	window.open(url,"_blank_1","toolbar=no,menubar=no,scrollbars=yes,resizable=no,width=450,height=200");
+}
+
+
+function idok(userid){
+	opener.frm.userid.value = document.frm.userid.value;
+	//opener 부모창  document => 새로열린창
+	opener.frm.reid.value = document.frm.userid.value;
+	self.close(); //새로열린창 종료
+}

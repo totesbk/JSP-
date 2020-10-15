@@ -1,0 +1,26 @@
+<%@page import="web07.Member"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<c:set var="msg">
+	Hello
+</c:set>
+msg = ${msg} <!-- <c:out value="msg"/>두개같은거 --> 
+<br>
+<c:set var="num1" value="30"/>
+num1 = ${num1}<br>
+
+<c:set var="member" value="<%=new Member() %>"/>
+<c:set target="${member}" property="userName" value="서상우"/>
+<c:set target="${member}" property="userId">
+	Seosangwoo
+</c:set>
+</body>
+</html>

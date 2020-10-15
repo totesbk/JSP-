@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>    
+<%!
+Connection conn = null;
+PreparedStatement psmt = null;
+
+String url = "jdbc:oracle:thin:@192.168.0.136:1521:XE";
+String uid = "STU007";
+String upw= "1234";
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String url = "jdbc:oracle:thin:@192.168.0.136:1521:XE";
+String uids = "userId";
+String upws = "userPwd";
+String names = "userName";
+String phones = "userPhone";
+int admin=0;
+
+String sql = "INSERT INTO member VALUES(?,?,?,?,?)";
+
+try{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	conn = DriverManager.getConnection(url,uid,upw);
+	psmt = conn.prepareStatement(sql);
+	psmt.setString(1,uids);
+	psmt.setString(2,upws);
+	psmt.setString(3,names);
+	psmt.setString(4,phones);
+	psmt.setInt(5,admin);
+	
+	psmt.executeUpdate();
+}catch(Exception e){
+	e.printStackTrace();
+}finally{
+	try{
+		if(psmt != null)psmt.close();
+		if(conn != null)conn.close();
+	}catch(Exception e){
+		e.printStackTrace();
+	}
+}
+
+%>
+</body>
+</html>

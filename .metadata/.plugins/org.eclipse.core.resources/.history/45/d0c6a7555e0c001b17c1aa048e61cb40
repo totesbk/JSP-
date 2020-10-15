@@ -1,0 +1,65 @@
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%!
+// 선언부는 첫 방문자에 의해서 단 한번 수행
+Connection conn = null;
+Statement stmt = null;
+//ResultSet rs = null;
+
+String url = "jdbc:oracle:thin:@192.168.0.136:1521:XE";
+String uid = "STU007";
+String upw = "1234";
+%>
+
+<%
+String name = "정길동";
+String userid = "jung";
+String userpwd = "1234";
+String email = "jung@naver.com";
+String phone = "010-1234-5678";
+int admin = 0;
+
+String sql = "INSERT INTO member VALUES('"+name+"','"+userid+"','"+userpwd+"','"+email+"','"+phone+"',"+0+")";
+   try{
+      // 1단계 
+      Class.forName("oracle.jdbc.driver.OracleDriver");
+      
+      // 2단계
+      conn = DriverManager.getConnection(url, uid, upw);
+      
+      // 3단계
+      stmt = conn.createStatement();
+      
+      // 4단계 
+      stmt.executeUpdate(sql);
+      
+   }catch(Exception e){
+      e.printStackTrace();
+   }finally{
+      try{
+         if(stmt != null){
+            stmt.close();
+         }
+         if(conn != null) conn.close();
+         //if절의 문장이 한문장이면 생략가능
+         
+      }catch(Exception e){
+         e.printStackTrace();
+      }
+   }
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데이터 삽입</title>
+</head>
+<body>
+
+</body>
+</html>
